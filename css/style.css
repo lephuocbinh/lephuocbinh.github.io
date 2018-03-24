@@ -257,8 +257,8 @@ body {
       margin-right: 2rem; }
       @media only screen and (max-width: 75em) {
         .user-nav__conversation-photo {
-          width: 3rem;
-          height: 3rem; } }
+          width: 3.5rem;
+          height: 3.5rem; } }
     .user-nav__conversation-list {
       border-bottom: 1px solid var(--color-Grey-light-4); }
     .user-nav__conversation-link {
@@ -300,8 +300,8 @@ body {
       margin-right: 2rem; }
       @media only screen and (max-width: 75em) {
         .user-nav__label-photo {
-          width: 3rem;
-          height: 3rem; } }
+          width: 3.5rem;
+          height: 3.5rem; } }
     .user-nav__label-link {
       display: flex;
       flex: 0 0 100%;
@@ -780,7 +780,7 @@ body {
 
 .image {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 6rem;
   right: 1.5rem;
   z-index: 7000; }
@@ -824,34 +824,23 @@ body {
     z-index: 7000; }
   .image__collect {
     margin-left: 2.5rem;
-    position: fixed;
-    top: 1.5rem;
+    position: relative;
+    top: -1.5rem;
     left: 2.5rem;
     z-index: 7500;
     display: none; }
     @media only screen and (max-width: 68.75em) {
       .image__collect {
-        left: 2rem;
-        top: 10rem;
+        left: 6rem;
+        top: 0rem;
         margin: 0; } }
     @media only screen and (max-width: 56.25em) {
       .image__collect {
-        top: 1rem;
-        left: 15rem; } }
+        left: 10rem; } }
     @media only screen and (max-width: 46.875em) {
       .image__collect {
-        top: 1rem;
-        left: 5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .image__collect {
-        left: -1rem; } }
-    @media only screen and (max-width: 31.25em) {
-      .image__collect {
-        top: 7rem; } }
-    @media only screen and (max-width: 28.125em) {
-      .image__collect {
-        top: 0;
-        left: 15rem; } }
+        margin: 0;
+        left: 4.5rem; } }
   .image__icon {
     width: 2.5rem;
     height: 2.5rem; }
@@ -859,39 +848,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 90%;
-    margin: 1.5rem 3rem; }
-    @media only screen and (max-width: 56.25em) {
-      .image__list {
-        width: 80%;
-        height: 80%; } }
-    @media only screen and (max-width: 46.875em) {
-      .image__list {
-        width: 90%;
-        height: 90%; } }
-    @media only screen and (max-width: 37.5em) {
-      .image__list {
-        width: 95%;
-        height: 95%; } }
-    @media only screen and (max-width: 28.125em) {
-      .image__list {
-        width: 50%;
-        height: 50%; } }
-    @media only screen and (max-width: 25.625em) {
-      .image__list {
-        width: 65%;
-        height: 65%; } }
+    height: 90%; }
   .image__item {
     display: flex;
-    flex: 0 0 33%; }
+    flex: 0 0 50%; }
     @media only screen and (max-width: 56.25em) {
       .image__item {
-        flex: 0 0 50%; } }
-    @media only screen and (max-width: 28.125em) {
+        flex: 0 0 90%; } }
+    @media only screen and (max-width: 46.875em) {
       .image__item {
-        flex: 0 0 80%; } }
+        flex: 0 0 100%; } }
   .image__link {
-    margin: 1rem;
+    margin: 1.75rem;
     border-radius: 10px;
     transition: transform 0.3s;
     box-shadow: 2rem 3rem 4rem rgba(0, 0, 0, 0.25);
@@ -912,25 +880,39 @@ body {
     opacity: 0.4; }
   .image__text {
     position: absolute;
-    top: 12rem;
+    top: 20rem;
     text-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.25);
-    left: 3.5rem;
+    left: 7rem;
     z-index: 12000;
     display: none;
     font-family: 'Pacifico', cursive;
     text-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.25);
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 400; }
+    @media only screen and (max-width: 68.75em) {
+      .image__text {
+        font-size: 4.5rem; } }
     @media only screen and (max-width: 56.25em) {
       .image__text {
-        font-size: 3rem; } }
+        font-size: 6rem;
+        top: 27rem;
+        left: 10rem; } }
+    @media only screen and (max-width: 46.875em) {
+      .image__text {
+        font-size: 5rem;
+        left: 8rem;
+        bottom: 5rem; } }
     @media only screen and (max-width: 31.25em) {
       .image__text {
-        font-size: 2.5rem; } }
-    @media only screen and (max-width: 28.125em) {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 31.25em) {
       .image__text {
-        font-size: 2rem;
-        top: 6rem; } }
+        font-size: 5rem;
+        left: 2rem;
+        top: 22rem; } }
+    @media only screen and (max-width: 25.625em) {
+      .image__text {
+        font-size: 4rem; } }
   .image__link:hover .image__text {
     animation: MoveUp 0.3s;
     display: block; }
